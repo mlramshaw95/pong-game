@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <div>
+        <p class="eyebrow">ARCADE CLASSIC</p>
+        <h1>PONG</h1>
+      </div>
+      <div class="scoreboard" aria-label="Scoreboard">
+        <div class="score-block">
+          <span class="score-label">PLAYER</span>
+          <span id="player-score" class="score">0</span>
+        </div>
+        <span class="divider">:</span>
+        <div class="score-block">
+          <span class="score-label">COMPUTER</span>
+          <span id="computer-score" class="score">0</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="court-wrapper">
+      <canvas id="game-canvas" width="900" height="520" aria-label="Pong game"></canvas>
+      <div id="message" class="message" hidden></div>
+    </section>
+
+    <footer class="controls">
+      <span><kbd>↑</kbd><kbd>↓</kbd> Move paddle</span>
+      <span><kbd>Mouse</kbd> Move paddle</span>
+      <button id="restart-button" type="button">Restart game</button>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
